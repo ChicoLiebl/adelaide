@@ -1,1 +1,3 @@
 pcb/adelheid-backups/*
+*.bak
+*.lck

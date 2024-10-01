@@ -522,29 +522,29 @@
 				)
 			)
 		)
-		(symbol "basketweave-rescue:Rotary_Encoder_Switch-Device"
+		(symbol "keeb-comps:Rotary_Encoder_Switch"
 			(pin_names
 				(offset 0.254) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 6.604 0)
+			(property "Reference" "SW1"
+				(at 0 9.3218 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Device_Rotary_Encoder_Switch"
-				(at 0 -6.604 0)
+			(property "Value" "Rotary_Encoder_Switch"
+				(at 0 7.0104 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
 				(at -3.81 4.064 0)
 				(effects
 					(font
@@ -553,7 +553,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 6.604 0)
 				(effects
 					(font
@@ -580,7 +580,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Rotary_Encoder_Switch-Device_0_1"
+			(symbol "Rotary_Encoder_Switch_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -805,7 +805,7 @@
 					)
 				)
 			)
-			(symbol "Rotary_Encoder_Switch-Device_1_1"
+			(symbol "Rotary_Encoder_Switch_1_1"
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -28712,7 +28712,7 @@
 		)
 	)
 	(symbol
-		(lib_id "basketweave-rescue:Rotary_Encoder_Switch-Device")
+		(lib_id "keeb-comps:Rotary_Encoder_Switch")
 		(at 306.07 204.47 180)
 		(unit 1)
 		(exclude_from_sim no)
