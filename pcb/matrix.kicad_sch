@@ -11657,7 +11657,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 52.705 0)
 			(effects
 				(font
@@ -11730,7 +11730,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 52.705 0)
 			(effects
 				(font
@@ -11795,7 +11795,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F2"
 			(at 143.0528 48.2854 0)
 			(effects
 				(font
@@ -11803,7 +11803,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 52.705 0)
 			(effects
 				(font
@@ -11868,7 +11868,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F3"
 			(at 162.1028 48.2854 0)
 			(effects
 				(font
@@ -11876,7 +11876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 144.145 52.705 0)
 			(effects
 				(font
@@ -11941,7 +11941,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F7"
 			(at 238.3028 48.2854 0)
 			(effects
 				(font
@@ -11949,7 +11949,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 220.345 52.705 0)
 			(effects
 				(font
@@ -12014,7 +12014,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F6"
 			(at 219.2528 48.2854 0)
 			(effects
 				(font
@@ -12022,7 +12022,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 201.295 52.705 0)
 			(effects
 				(font
@@ -12087,7 +12087,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F4"
 			(at 181.1528 48.2854 0)
 			(effects
 				(font
@@ -12095,7 +12095,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 163.195 52.705 0)
 			(effects
 				(font
@@ -12160,7 +12160,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F5"
 			(at 200.2028 48.2854 0)
 			(effects
 				(font
@@ -12168,7 +12168,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 182.245 52.705 0)
 			(effects
 				(font
@@ -12233,7 +12233,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F11"
 			(at 314.5028 48.2854 0)
 			(effects
 				(font
@@ -12241,7 +12241,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 296.545 52.705 0)
 			(effects
 				(font
@@ -12306,7 +12306,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F10"
 			(at 295.4528 48.2854 0)
 			(effects
 				(font
@@ -12314,7 +12314,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 277.495 52.705 0)
 			(effects
 				(font
@@ -12379,7 +12379,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F8"
 			(at 257.3528 48.2854 0)
 			(effects
 				(font
@@ -12387,7 +12387,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 239.395 52.705 0)
 			(effects
 				(font
@@ -12452,7 +12452,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F9"
 			(at 276.4028 48.2854 0)
 			(effects
 				(font
@@ -12460,7 +12460,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 258.445 52.705 0)
 			(effects
 				(font
@@ -12525,7 +12525,7 @@
 				)
 			)
 		)
-		(property "Value" "MX-LED"
+		(property "Value" "F12"
 			(at 333.5528 48.2854 0)
 			(effects
 				(font
@@ -12533,7 +12533,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 315.595 52.705 0)
 			(effects
 				(font
@@ -12744,7 +12744,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1.25U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1.25U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 149.225 0)
 			(effects
 				(font
@@ -14952,7 +14952,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 277.495 76.835 0)
 			(effects
 				(font
@@ -15025,7 +15025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 258.445 76.835 0)
 			(effects
 				(font
@@ -15098,7 +15098,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 239.395 76.835 0)
 			(effects
 				(font
@@ -15163,7 +15163,7 @@
 				)
 			)
 		)
-		(property "Value" "del"
+		(property "Value" "DEL"
 			(at 352.6028 48.2854 0)
 			(effects
 				(font
@@ -15171,7 +15171,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 334.645 52.705 0)
 			(effects
 				(font
@@ -15244,7 +15244,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 144.145 76.835 0)
 			(effects
 				(font
@@ -15317,7 +15317,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 182.245 76.835 0)
 			(effects
 				(font
@@ -15390,7 +15390,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 163.195 76.835 0)
 			(effects
 				(font
@@ -15463,7 +15463,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 296.545 76.835 0)
 			(effects
 				(font
@@ -15605,7 +15605,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 201.295 76.835 0)
 			(effects
 				(font
@@ -15678,7 +15678,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 315.595 76.835 0)
 			(effects
 				(font
@@ -15751,7 +15751,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 76.835 0)
 			(effects
 				(font
@@ -15824,7 +15824,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 220.345 76.835 0)
 			(effects
 				(font
@@ -15897,7 +15897,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 76.835 0)
 			(effects
 				(font
@@ -15970,7 +15970,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 76.835 0)
 			(effects
 				(font
@@ -17906,7 +17906,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 277.495 100.965 0)
 			(effects
 				(font
@@ -17979,7 +17979,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 258.445 100.965 0)
 			(effects
 				(font
@@ -18052,7 +18052,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 239.395 100.965 0)
 			(effects
 				(font
@@ -18125,7 +18125,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 144.145 100.965 0)
 			(effects
 				(font
@@ -18198,7 +18198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 182.245 100.965 0)
 			(effects
 				(font
@@ -18271,7 +18271,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 163.195 100.965 0)
 			(effects
 				(font
@@ -18344,7 +18344,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 296.545 100.965 0)
 			(effects
 				(font
@@ -18478,7 +18478,7 @@
 				)
 			)
 		)
-		(property "Value" "backspace"
+		(property "Value" "BKSPC"
 			(at 352.6028 96.5454 0)
 			(effects
 				(font
@@ -18486,7 +18486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-2U"
+		(property "Footprint" "ai03-MX_only:MXOnly-2U-Hotswap-Antishear-Led-SMD"
 			(at 334.645 100.965 0)
 			(effects
 				(font
@@ -18559,7 +18559,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 201.295 100.965 0)
 			(effects
 				(font
@@ -18632,7 +18632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 315.595 100.965 0)
 			(effects
 				(font
@@ -18705,7 +18705,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 100.965 0)
 			(effects
 				(font
@@ -18778,7 +18778,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 220.345 100.965 0)
 			(effects
 				(font
@@ -18851,7 +18851,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1.5U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1.5U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 100.965 0)
 			(effects
 				(font
@@ -18924,7 +18924,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 100.965 0)
 			(effects
 				(font
@@ -20722,7 +20722,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 277.495 125.095 0)
 			(effects
 				(font
@@ -20795,7 +20795,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 258.445 125.095 0)
 			(effects
 				(font
@@ -20868,7 +20868,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 239.395 125.095 0)
 			(effects
 				(font
@@ -20941,7 +20941,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 144.145 125.095 0)
 			(effects
 				(font
@@ -21014,7 +21014,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 182.245 125.095 0)
 			(effects
 				(font
@@ -21087,7 +21087,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 163.195 125.095 0)
 			(effects
 				(font
@@ -21160,7 +21160,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 296.545 125.095 0)
 			(effects
 				(font
@@ -21302,7 +21302,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 201.295 125.095 0)
 			(effects
 				(font
@@ -21367,7 +21367,7 @@
 				)
 			)
 		)
-		(property "Value" "enter"
+		(property "Value" "ENTER"
 			(at 352.6028 120.6754 0)
 			(effects
 				(font
@@ -21375,7 +21375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-ISO"
+		(property "Footprint" "ai03-MX_only:MXOnly-ISO-Hotswap-Antishear-Led-SMD"
 			(at 334.645 125.095 0)
 			(effects
 				(font
@@ -21448,7 +21448,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 125.095 0)
 			(effects
 				(font
@@ -21521,7 +21521,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 220.345 125.095 0)
 			(effects
 				(font
@@ -21594,7 +21594,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 125.095 0)
 			(effects
 				(font
@@ -23254,7 +23254,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 277.495 149.225 0)
 			(effects
 				(font
@@ -23327,7 +23327,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 258.445 149.225 0)
 			(effects
 				(font
@@ -23400,7 +23400,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 239.395 149.225 0)
 			(effects
 				(font
@@ -23473,7 +23473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 144.145 149.225 0)
 			(effects
 				(font
@@ -23546,7 +23546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 182.245 149.225 0)
 			(effects
 				(font
@@ -23619,7 +23619,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 163.195 149.225 0)
 			(effects
 				(font
@@ -23692,7 +23692,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 296.545 149.225 0)
 			(effects
 				(font
@@ -23834,7 +23834,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 315.595 149.225 0)
 			(effects
 				(font
@@ -23907,7 +23907,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 201.295 149.225 0)
 			(effects
 				(font
@@ -23980,7 +23980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 149.225 0)
 			(effects
 				(font
@@ -24053,7 +24053,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 220.345 149.225 0)
 			(effects
 				(font
@@ -24126,7 +24126,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1.75U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1.75U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 125.095 0)
 			(effects
 				(font
@@ -24199,7 +24199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 149.225 0)
 			(effects
 				(font
@@ -26135,7 +26135,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1.5U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1.5U-Hotswap-Antishear-Led-SMD"
 			(at 258.445 173.355 0)
 			(effects
 				(font
@@ -26208,7 +26208,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 182.245 173.355 0)
 			(effects
 				(font
@@ -26281,7 +26281,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-2U-ReversedStabilizers"
+		(property "Footprint" "ai03-MX_only:MXOnly-2U-RevStab-Hotswap-Antishear-Led-SMD"
 			(at 163.195 173.355 0)
 			(effects
 				(font
@@ -26354,7 +26354,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 315.595 173.355 0)
 			(effects
 				(font
@@ -26427,7 +26427,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 296.545 173.355 0)
 			(effects
 				(font
@@ -26500,7 +26500,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1.5U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1.5U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 173.355 0)
 			(effects
 				(font
@@ -26565,7 +26565,7 @@
 				)
 			)
 		)
-		(property "Value" "space"
+		(property "Value" "SPACE"
 			(at 238.3028 168.9354 0)
 			(effects
 				(font
@@ -26573,7 +26573,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-2.75U-ReversedStabilizers"
+		(property "Footprint" "ai03-MX_only:MXOnly-2.75U-RevStab-Hotswap-Antishear-Led-SMD"
 			(at 220.345 173.355 0)
 			(effects
 				(font
@@ -26646,7 +26646,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1.5U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1.5U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 173.355 0)
 			(effects
 				(font
@@ -27754,7 +27754,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1.5U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1.5U-Hotswap-Antishear-Led-SMD"
 			(at 144.145 173.355 0)
 			(effects
 				(font
@@ -27961,7 +27961,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 172.085 0)
 			(effects
 				(font
@@ -28379,7 +28379,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 334.645 149.225 0)
 			(effects
 				(font
@@ -28452,7 +28452,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 315.595 125.095 0)
 			(effects
 				(font
@@ -28663,7 +28663,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 334.645 173.355 0)
 			(effects
 				(font

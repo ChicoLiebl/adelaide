@@ -8350,7 +8350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Crystals:Crystal_SMD_SeikoEpson_FA238-4pin_3.2x2.5mm_HandSoldering"
+		(property "Footprint" "Crystal:Crystal_SMD_SeikoEpson_FA238-4Pin_3.2x2.5mm"
 			(at 63.5 92.71 0)
 			(effects
 				(font
