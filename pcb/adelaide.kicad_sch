@@ -6872,6 +6872,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 50 0 255 1)
 			)
 			(justify left bottom)
 		)
@@ -12064,7 +12065,7 @@
 			(uuid "708723b1-3b1c-4d1a-927f-15d29a681863")
 		)
 		(instances
-			(project "adelheid"
+			(project "adelaide"
 				(path "/d70b80e3-73a0-49ba-a2b6-1c0533cc0557"
 					(page "2")
 				)
