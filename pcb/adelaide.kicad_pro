@@ -499,7 +499,10 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "/ledGND": "rgb(92, 95, 255)",
+      "VCC": "rgb(255, 188, 25)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": [
       {
@@ -1401,7 +1404,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "adelheid.net",
-      "plot": "",
+      "plot": "../case/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
