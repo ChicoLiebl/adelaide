@@ -1,3 +1,5 @@
 pcb/*-backups/*
 *.bak
 *.lck
+macro-pad/fab_out/*
+macro-pad/*-backups/*

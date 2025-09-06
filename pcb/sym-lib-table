@@ -1,6 +1,5 @@
 (sym_lib_table
   (version 7)
-  (lib (name "adelheid-rescue")(type "KiCad")(uri "${KIPRJMOD}/adelheid-rescue.kicad_sym")(options "")(descr ""))
   (lib (name "ai03-schematic_library")(type "Legacy")(uri "${KIPRJMOD}/lib/Schematic Library/MX_Alps_Hybrid.lib")(options "")(descr ""))
   (lib (name "keeb-comps")(type "KiCad")(uri "${KIPRJMOD}/lib/keeb-comps.kicad_sym")(options "")(descr ""))
 )

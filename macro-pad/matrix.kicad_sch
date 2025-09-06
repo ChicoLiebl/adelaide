@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "0d627adb-7445-4fa0-b335-114fccb859b0")
 	(paper "A3")
 	(lib_symbols
 		(symbol "Device:D"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -106,10 +110,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -118,10 +122,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -167,9 +171,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -288,6 +295,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "ai03-schematic_library:MX-LED"
 			(pin_names
@@ -363,10 +371,9 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -0.635)
-					)
+				(circle
+					(center 0 0)
+					(radius 0.3556)
 					(stroke
 						(width 0.127)
 						(type solid)
@@ -377,7 +384,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.635 0)
+						(xy 0 -1.27) (xy 0 -0.635)
 					)
 					(stroke
 						(width 0.127)
@@ -399,9 +406,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 0 0)
-					(radius 0.3556)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.635 0)
+					)
 					(stroke
 						(width 0.127)
 						(type solid)
@@ -410,12 +418,13 @@
 						(type none)
 					)
 				)
-				(text "COL"
-					(at 5.715 1.27 0)
+				(text "ROW"
+					(at -1.27 -4.445 900)
 					(effects
 						(font
 							(size 0.762 0.762)
 						)
+						(justify right)
 					)
 				)
 				(text "LED"
@@ -426,13 +435,12 @@
 						)
 					)
 				)
-				(text "ROW"
-					(at -1.27 -4.445 900)
+				(text "COL"
+					(at 5.715 1.27 0)
 					(effects
 						(font
 							(size 0.762 0.762)
 						)
-						(justify right)
 					)
 				)
 			)
@@ -449,24 +457,6 @@
 			)
 			(symbol "MX-LED_1_1"
 				(pin passive line
-					(at 3.81 1.27 180)
-					(length 2.54)
-					(name "COL"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -1.27 -3.81 90)
 					(length 2.54)
 					(name "ROW"
@@ -477,6 +467,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "LEDGND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 0 0)
@@ -503,16 +511,16 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.27)
-					(name "LEDGND"
+					(at 3.81 1.27 180)
+					(length 2.54)
+					(name "COL"
 						(effects
 							(font
 								(size 0 0)
 							)
 						)
 					)
-					(number "4"
+					(number "1"
 						(effects
 							(font
 								(size 0 0)
@@ -521,10 +529,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "keeb-comps:Rotary_Encoder_Switch"
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -592,94 +603,24 @@
 						(type background)
 					)
 				)
-				(circle
-					(center -3.81 0)
-					(radius 0.254)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
+					)
 					(stroke
 						(width 0)
 						(type solid)
 					)
 					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -0.381 0)
-					(radius 1.905)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.381 2.667)
-					(mid -3.0988 -0.0635)
-					(end -0.381 -2.794)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
 						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy -0.635 -1.778) (xy -0.635 1.778)
+						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
 					)
 					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.381 -1.778) (xy -0.381 1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 1.778) (xy -0.127 -1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0) (xy 3.429 0)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 1.016) (xy 3.81 -1.016)
-					)
-					(stroke
-						(width 0.254)
+						(width 0)
 						(type solid)
 					)
 					(fill
@@ -700,7 +641,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
+						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
 					)
 					(stroke
 						(width 0)
@@ -710,9 +651,67 @@
 						(type none)
 					)
 				)
+				(circle
+					(center -3.81 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
-						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
+						(xy -0.635 -1.778) (xy -0.635 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.381 0)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -1.778) (xy -0.381 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.381 -2.794)
+					(mid -3.0988 -0.0635)
+					(end -0.381 2.667)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 1.778) (xy -0.127 -1.778)
 					)
 					(stroke
 						(width 0.254)
@@ -736,8 +735,54 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 4.318 -1.016)
+						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
 					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.016) (xy 3.81 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.429 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 -1.016)
+					(radius 0.127)
 					(stroke
 						(width 0.254)
 						(type solid)
@@ -760,42 +805,8 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
+						(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 4.318 -1.016)
 					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 4.318 -1.016)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 4.318 1.016)
-					(radius 0.127)
 					(stroke
 						(width 0.254)
 						(type solid)
@@ -825,24 +836,6 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -7.62 0 0)
 					(length 2.54)
 					(name "C"
@@ -853,6 +846,24 @@
 						)
 					)
 					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -897,6 +908,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -976,7 +988,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -993,6 +1006,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
@@ -1070,7 +1084,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1082,7 +1096,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1096,7 +1110,8 @@
 			(symbol "VCC_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "VCC"
 						(effects
 							(font
@@ -1113,6 +1128,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -3272,7 +3288,6 @@
 	(hierarchical_label "ledGND"
 		(shape input)
 		(at 81.28 53.34 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3284,7 +3299,6 @@
 	(hierarchical_label "Enc2"
 		(shape input)
 		(at 321.31 201.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3296,7 +3310,6 @@
 	(hierarchical_label "col13"
 		(shape tri_state)
 		(at 354.33 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3308,7 +3321,6 @@
 	(hierarchical_label "col10"
 		(shape tri_state)
 		(at 297.18 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3320,7 +3332,6 @@
 	(hierarchical_label "col4"
 		(shape tri_state)
 		(at 182.88 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3332,7 +3343,6 @@
 	(hierarchical_label "col0"
 		(shape tri_state)
 		(at 106.68 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3344,7 +3354,6 @@
 	(hierarchical_label "col6"
 		(shape tri_state)
 		(at 220.98 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3356,7 +3365,6 @@
 	(hierarchical_label "col2"
 		(shape tri_state)
 		(at 144.78 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3368,7 +3376,6 @@
 	(hierarchical_label "col9"
 		(shape tri_state)
 		(at 278.13 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3380,7 +3387,6 @@
 	(hierarchical_label "row3"
 		(shape tri_state)
 		(at 80.01 137.16 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3392,7 +3398,6 @@
 	(hierarchical_label "row2"
 		(shape tri_state)
 		(at 80.01 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3404,7 +3409,6 @@
 	(hierarchical_label "col14"
 		(shape tri_state)
 		(at 373.38 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3416,7 +3420,6 @@
 	(hierarchical_label "col5"
 		(shape tri_state)
 		(at 201.93 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3428,7 +3431,6 @@
 	(hierarchical_label "row1"
 		(shape tri_state)
 		(at 80.01 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3440,7 +3442,6 @@
 	(hierarchical_label "col8"
 		(shape tri_state)
 		(at 259.08 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3452,7 +3453,6 @@
 	(hierarchical_label "Enc1"
 		(shape input)
 		(at 321.31 207.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3464,7 +3464,6 @@
 	(hierarchical_label "col1"
 		(shape tri_state)
 		(at 125.73 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3476,7 +3475,6 @@
 	(hierarchical_label "row0"
 		(shape tri_state)
 		(at 80.01 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3488,7 +3486,6 @@
 	(hierarchical_label "col11"
 		(shape tri_state)
 		(at 316.23 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3500,7 +3497,6 @@
 	(hierarchical_label "col7"
 		(shape tri_state)
 		(at 240.03 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3512,7 +3508,6 @@
 	(hierarchical_label "col12"
 		(shape tri_state)
 		(at 335.28 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3524,7 +3519,6 @@
 	(hierarchical_label "col3"
 		(shape tri_state)
 		(at 163.83 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3536,7 +3530,6 @@
 	(hierarchical_label "row4"
 		(shape tri_state)
 		(at 80.01 161.29 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3548,7 +3541,6 @@
 	(hierarchical_label "row5"
 		(shape bidirectional)
 		(at 80.01 185.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3582,7 +3574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 52.705 0)
 			(effects
 				(font
@@ -3655,7 +3647,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 52.705 0)
 			(effects
 				(font
@@ -3728,7 +3720,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 52.705 0)
 			(effects
 				(font
@@ -3801,7 +3793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 144.145 52.705 0)
 			(effects
 				(font
@@ -4012,7 +4004,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-2U"
+		(property "Footprint" "ai03-MX_only:MXOnly-2U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 149.225 0)
 			(effects
 				(font
@@ -4702,7 +4694,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 76.835 0)
 			(effects
 				(font
@@ -4775,7 +4767,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 76.835 0)
 			(effects
 				(font
@@ -4848,7 +4840,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 76.835 0)
 			(effects
 				(font
@@ -5335,7 +5327,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-2U"
+		(property "Footprint" "ai03-MX_only:MXOnly-2U-Hotswap-Antishear-Led-SMD"
 			(at 144.145 100.965 0)
 			(effects
 				(font
@@ -5408,7 +5400,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 100.965 0)
 			(effects
 				(font
@@ -5481,7 +5473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 100.965 0)
 			(effects
 				(font
@@ -5554,7 +5546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 100.965 0)
 			(effects
 				(font
@@ -6179,7 +6171,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 125.095 0)
 			(effects
 				(font
@@ -6252,7 +6244,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 106.045 125.095 0)
 			(effects
 				(font
@@ -6601,7 +6593,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-2U"
+		(property "Footprint" "ai03-MX_only:MXOnly-2U-Hotswap-Antishear-Led-SMD"
 			(at 144.145 125.095 0)
 			(effects
 				(font
@@ -6674,7 +6666,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 125.095 149.225 0)
 			(effects
 				(font
@@ -6747,7 +6739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-MX_only:MXOnly-1U"
+		(property "Footprint" "ai03-MX_only:MXOnly-1U-Hotswap-Antishear-Led-SMD"
 			(at 86.995 125.095 0)
 			(effects
 				(font
