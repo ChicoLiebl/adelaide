@@ -54,6 +54,28 @@
 	(attr exclude_from_pos_files exclude_from_bom)
 	(fp_circle
 		(center 0 0)
+		(end 3.5 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "8b4a7a2e-a62b-433e-8420-08320845b558")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.2 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Eco1.User")
+		(uuid "8fdac0aa-2516-45a4-81ed-34ffd03320ba")
+	)
+	(fp_circle
+		(center 0 0)
 		(end 0.9 0)
 		(stroke
 			(width 0.05)

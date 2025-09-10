@@ -233,6 +233,17 @@
 		(layer "Dwgs.User")
 		(uuid "130c3d15-df7e-4b6c-b4bf-fc3d7101bf60")
 	)
+	(fp_rect
+		(start -7.5 -7.5)
+		(end 7.5 7.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Eco1.User")
+		(uuid "5b913e90-3853-4281-ba3f-b18f14563f58")
+	)
 	(fp_line
 		(start -9.35 -3.8)
 		(end -9.35 -1.3)
