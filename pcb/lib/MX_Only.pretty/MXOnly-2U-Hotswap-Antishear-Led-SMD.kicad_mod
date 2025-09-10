@@ -234,15 +234,15 @@
 		(uuid "345bafe5-9d12-47d5-91ac-2a9af7b6d8c8")
 	)
 	(fp_rect
-		(start -7.5 -7.5)
-		(end 7.5 7.5)
+		(start -7.025 -7.025)
+		(end 7.025 7.025)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill no)
 		(layer "Eco1.User")
-		(uuid "1615bbd4-4944-4ee3-9ccd-3cfa4923ad60")
+		(uuid "1fc62018-11ca-42ab-bf6c-094294df482c")
 	)
 	(fp_line
 		(start -9.315 -3.785)
@@ -449,15 +449,15 @@
 		(uuid "fb71d485-f355-49c1-8ca8-d909eb551989")
 	)
 	(fp_rect
-		(start -7.025 -7.025)
-		(end 7.025 7.025)
+		(start -7.5 -7.5)
+		(end 7.5 7.5)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "1fc62018-11ca-42ab-bf6c-094294df482c")
+		(uuid "1615bbd4-4944-4ee3-9ccd-3cfa4923ad60")
 	)
 	(pad "" np_thru_hole circle
 		(at -11.938 -6.98545)

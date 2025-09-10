@@ -7360,7 +7360,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+		(property "Footprint" "keeb-conn:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
 			(at 309.88 208.534 0)
 			(effects
 				(font
