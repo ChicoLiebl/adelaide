@@ -4,3 +4,4 @@ pcb/*-backups/*
 macro-pad/fab_out/*
 macro-pad/*-backups/*
 scripts/__pycache__/*
+FAB-OUTPUTS/**
