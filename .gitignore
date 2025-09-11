@@ -3,3 +3,4 @@ pcb/*-backups/*
 *.lck
 macro-pad/fab_out/*
 macro-pad/*-backups/*
+scripts/__pycache__/*
