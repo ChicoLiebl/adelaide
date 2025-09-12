@@ -18,7 +18,7 @@ OUT_DIR_3D="$OUT_DIR/3D"
 mkdir -p "$OUT_DIR_3D"
 
 # Top plate
-freecadcmd "$BASE_DIR/scripts/svg_to_solid.py" "$OUT_DIR_2D/macro-pad-User_Eco1.dxf" "$OUT_DIR_3D/top-plate.step" 1.4
-freecadcmd "$BASE_DIR/scripts/svg_to_solid.py" "$OUT_DIR_2D/macro-pad-User_Eco2.dxf" "$OUT_DIR_3D/bottom-plate.step" 2
+freecadcmd "$BASE_DIR/scripts/dxf_to_solid.py" "$OUT_DIR_2D/macro-pad-User_Eco1.dxf" "$OUT_DIR_3D/top-plate.step" 1.4
+freecadcmd "$BASE_DIR/scripts/dxf_to_solid.py" "$OUT_DIR_2D/macro-pad-User_Eco2.dxf" "$OUT_DIR_3D/bottom-plate.step" 2
 freecadcmd "$BASE_DIR/scripts/generate_mold.py" "$OUT_DIR_2D/macro-pad-F_Courtyard.dxf" "$OUT_DIR_3D/top-spacer-mold.step" 4.5 2
 freecadcmd "$BASE_DIR/scripts/generate_mold.py" "$OUT_DIR_2D/macro-pad-B_Courtyard.dxf" "$OUT_DIR_3D/bottom-spacer-mold.step" 4.5 2

@@ -112,6 +112,7 @@ def main():
         print("Usage: freecadcmd process_dxf.py <input.dxf> <output.step> <extrusion_height_mm>")
         sys.exit(1)
 
+    print(f"Input: {sys.argv[2]}, Output: {sys.argv[3]}, Extrusion Height: {sys.argv[4]}")
     input_file = sys.argv[2]
     output_file = sys.argv[3]
     height = float(sys.argv[4])
@@ -124,7 +125,9 @@ def main():
     print(f"Exporting final solid to STEP: {output_file}")
     Import.export([solid], output_file)
 
-    print(f"🎉 Done! Result saved to {output_file}")
+    print(f"Done! Result saved to {output_file}")
 
-if __name__ == "__main__":
+
+""" When running with freecadcmd name is set to filename """
+if __name__ == "__main__" or __name__ == "dxf_to_solid":
     main()
