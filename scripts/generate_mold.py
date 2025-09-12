@@ -1,8 +1,10 @@
 import sys
 import FreeCAD
 import importDXF
-import Draft
+import Draft, Part
 import Import
+
+from dxf_to_solid import solid_extrusion_from_dxf
 
 ### Enable legacy importer ###
 ### Make sure dxf-library addon is installed ###
@@ -26,50 +28,21 @@ print(f"Input: {input_file}, Output: {output_file}, Cavity Height: {height}mm, T
 # ------------------------------
 # Create a new FreeCAD document
 # ------------------------------
-doc = FreeCAD.newDocument("SVG_to_STEP")
+doc = FreeCAD.newDocument("Mold")
+
+solid = solid_extrusion_from_dxf(input_file, height, doc)
 
 # ------------------------------
-# Import SVG
+# Compute bounding box of the solid
 # ------------------------------
-importDXF.insert(input_file, doc.Name)
-doc.recompute()
-
-# Collect all imported objects
-imported_objs = [obj for obj in doc.Objects]
-if not imported_objs:
-    print("❌ No objects were imported! Check DXF file or importer settings.")
-    sys.exit(1)
-
-# Connect wires
-imported_objs, _ = Draft.upgrade(imported_objs, delete=True)
-
-# ------------------------------
-# Create a sketch from imported geometry
-# ------------------------------
-svg_sketch = Draft.makeSketch(imported_objs, autoconstraints=True)
-doc.recompute()
-
-
-# Optionally remove the original imported objects (we keep only the sketch)
-for obj in imported_objs:
-    try:
-        doc.removeObject(obj.Name)
-    except Exception:
-        pass
-doc.recompute()
-
-# ------------------------------
-# Compute bounding box of the imported sketch
-# ------------------------------
-# Use the Sketch's Shape BoundBox; ensure the sketch shape is up-to-date
 try:
-    bb = svg_sketch.Shape.BoundBox
+    bb = solid.Shape.BoundBox
 except Exception as e:
-    print("Could not compute bounding box of sketch:", e)
+    print("Could not compute bounding box from solid:", e)
     sys.exit(1)
 
 min_x, min_y, max_x, max_y = bb.XMin, bb.YMin, bb.XMax, bb.YMax
-print(f"Sketch bounding box: X[{min_x}, {max_x}] Y[{min_y}, {max_y}]")
+print(f"Solid bounding box: X[{min_x}, {max_x}] Y[{min_y}, {max_y}]")
 
 # ------------------------------
 # Create a new sketch with a rectangle that fits the bounding box + margin
@@ -112,19 +85,12 @@ base_extrusion.Solid = True
 base_extrusion.TaperAngle = 0
 doc.recompute()
 
-slot_extrusion = doc.addObject("Part::Extrusion", "SlotExtrusion")
-slot_extrusion.Base = svg_sketch
-slot_extrusion.Dir = (0, 0, height)  # Negative Z so it cuts downward
-slot_extrusion.Solid = True
-slot_extrusion.TaperAngle = 0
-doc.recompute()
-
 # ------------------------------
 # Cut the slot from the base solid
 # ------------------------------
 cut_obj = doc.addObject("Part::Cut", "FinalSolid")
 cut_obj.Base = base_extrusion
-cut_obj.Tool = slot_extrusion
+cut_obj.Tool = solid
 doc.recompute()
 # ------------------------------
 # Save intermediate FreeCAD project

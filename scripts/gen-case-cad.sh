@@ -12,16 +12,13 @@ mkdir -p $OUT_DIR
 OUT_DIR_2D="$OUT_DIR/2D"
 mkdir -p $OUT_DIR_2D
 
-
-kicad-cli pcb export dxf --layers "F.Courtyard,Edge.Cuts" --udo --ou mm --drill-shape-opt 0 --cl "" --mode-single -o "$OUT_DIR_2D/top-spacer.dxf" "$PCB_FILE"
-kicad-cli pcb export dxf --layers "User.Eco1,Edge.Cuts" --udo --ou mm --drill-shape-opt 0 --cl "" --mode-single -o "$OUT_DIR_2D/top-plate.dxf" "$PCB_FILE"
-kicad-cli pcb export dxf --layers "B.Courtyard,Edge.Cuts" --udo --ou mm --drill-shape-opt 0 --cl "" --mode-single -o "$OUT_DIR_2D/bottom-spacer.dxf" "$PCB_FILE"
-kicad-cli pcb export dxf --layers "User.Eco1" --udo --ou mm --drill-shape-opt 0 --cl "" --mode-single -o "$OUT_DIR_2D/holes.dxf" "$PCB_FILE"
-kicad-cli pcb export dxf --layers "Edge.Cuts" --udo --ou mm --drill-shape-opt 0 --cl "" --mode-single -o "$OUT_DIR_2D/edge.dxf" "$PCB_FILE"
+kicad-cli pcb export dxf --layers "F.Courtyard,User.Eco1,B.Courtyard,User.Eco2" --udo --ou mm --drill-shape-opt 0 --cl "Edge.Cuts" --mode-multi -o "$OUT_DIR_2D" "$PCB_FILE"
 
 OUT_DIR_3D="$OUT_DIR/3D"
 mkdir -p "$OUT_DIR_3D"
 
 # Top plate
-freecadcmd "$BASE_DIR/scripts/svg_to_solid.py" "$OUT_DIR_2D/top-plate.dxf" "$OUT_DIR_3D/top-plate.step" 1.4
-freecadcmd "$BASE_DIR/scripts/generate_mold.py" "$OUT_DIR_2D/top-spacer.dxf" "$OUT_DIR_3D/top-spacer-mold.step" 4.5 2
+freecadcmd "$BASE_DIR/scripts/svg_to_solid.py" "$OUT_DIR_2D/macro-pad-User_Eco1.dxf" "$OUT_DIR_3D/top-plate.step" 1.4
+freecadcmd "$BASE_DIR/scripts/svg_to_solid.py" "$OUT_DIR_2D/macro-pad-User_Eco2.dxf" "$OUT_DIR_3D/bottom-plate.step" 2
+freecadcmd "$BASE_DIR/scripts/generate_mold.py" "$OUT_DIR_2D/macro-pad-F_Courtyard.dxf" "$OUT_DIR_3D/top-spacer-mold.step" 4.5 2
+freecadcmd "$BASE_DIR/scripts/generate_mold.py" "$OUT_DIR_2D/macro-pad-B_Courtyard.dxf" "$OUT_DIR_3D/bottom-spacer-mold.step" 4.5 2
