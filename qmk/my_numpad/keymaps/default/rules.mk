@@ -1,0 +1,4 @@
+# Processor frequency
+F_CPU = 16000000
+ENCODER_MAP_ENABLE = yes
+BACKLIGHT_PWM_TIMER = 3
