@@ -41,13 +41,21 @@ function check_status {
   fi
 }
 
+# Run DRC check
+log_yellow 'Running DRC check'
+
+kicad-cli pcb drc --output $OUT_DIR/drc-report.json --format json --severity-error --exit-code-violations $BASE_DIR/$PCB_FILE
+check_status $?
+
+log_green 'DRC passed'
+
 # Generate output files
 
 if [ "$1" = "--pcbway" ]; then
 
 log_yellow 'Generating board files for PCBWay'
 
-kikit fab pcbway --nametemplate "$OUT_NAME" --assembly --schematic $SCHEMATIC_FILE $PCB_FILE $OUT_DIR
+kikit fab pcbway --no-drc --nametemplate "$OUT_NAME" --assembly --schematic $SCHEMATIC_FILE $PCB_FILE $OUT_DIR
 check_status $?
 
 log_green Success
@@ -55,7 +63,7 @@ log_green Success
 else
 log_yellow 'Generating board files for JLCPCB'
 
-kikit fab jlcpcb --nametemplate "$OUT_NAME" --assembly --schematic $SCHEMATIC_FILE $PCB_FILE $OUT_DIR
+kikit fab jlcpcb --no-drc --nametemplate "$OUT_NAME" --assembly --schematic $SCHEMATIC_FILE $PCB_FILE $OUT_DIR
 check_status $?
 
 log_green Success
