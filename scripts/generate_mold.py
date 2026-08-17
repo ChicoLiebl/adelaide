@@ -111,4 +111,6 @@ if split_file:
 
 # freecadcmd 1.1+ runs the script twice (once as the filename, once as
 # "__main__"); exiting here prevents the second pass from redoing everything.
+sys.stdout.flush()
+sys.stderr.flush()
 sys.exit(0)

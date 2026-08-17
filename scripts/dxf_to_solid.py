@@ -209,4 +209,6 @@ def main():
 # second freecadcmd pass from running everything again.
 if len(sys.argv) > 1 and os.path.basename(sys.argv[1]).startswith("dxf_to_solid"):
     main()
+    sys.stdout.flush()
+    sys.stderr.flush()
     sys.exit(0)
