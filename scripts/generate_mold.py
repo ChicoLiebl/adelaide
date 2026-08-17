@@ -14,16 +14,17 @@ params.SetBool("dxfUseLegacyImporter", True)
 # ------------------------------
 # CLI args validation
 # ------------------------------
-if len(sys.argv) < 5:
-    print("Usage: freecadcmd import_svg.py <input.dxf> <output.step> <mold cavity height> <mold thickness>")
+if len(sys.argv) < 6:
+    print("Usage: freecadcmd generate_mold.py <input.dxf> <output.step> <mold cavity height> <mold thickness> [split_line.dxf]")
     sys.exit(1)
 
 input_file = sys.argv[2]
 output_file = sys.argv[3]
 height = float(sys.argv[4])
 thickness = float(sys.argv[5])
+split_file = sys.argv[6] if len(sys.argv) > 6 else None
 
-print(f"Input: {input_file}, Output: {output_file}, Cavity Height: {height}mm, Thickness: {sys.argv[4]}mm")
+print(f"Input: {input_file}, Output: {output_file}, Cavity Height: {height}mm, Thickness: {thickness}mm")
 # exit(0)
 # ------------------------------
 # Create a new FreeCAD document
@@ -103,3 +104,11 @@ project_name = input_file.split(".")[0] + ".FCStd"
 # ------------------------------
 Import.export([cut_obj], output_file)
 print(f"✅ Imported '{input_file}', created mold with cavity height {height}mm and thickness {thickness}mm, exported as STEP → '{output_file}'")
+
+if split_file:
+    from dxf_to_solid import export_split_parts
+    export_split_parts(cut_obj.Shape, split_file, output_file, doc)
+
+# freecadcmd 1.1+ runs the script twice (once as the filename, once as
+# "__main__"); exiting here prevents the second pass from redoing everything.
+sys.exit(0)
