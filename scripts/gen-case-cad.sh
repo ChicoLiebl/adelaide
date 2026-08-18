@@ -45,10 +45,10 @@ run_job() {
 run_job top-plate          freecadcmd "$BASE_DIR/scripts/dxf_to_solid.py" "$OUT_DIR_2D/$PROJECT_NAME-User_Eco1.dxf" "$OUT_DIR_3D/top-plate.step" 1.4 $TOP_SPLIT
 run_job bottom-plate       freecadcmd "$BASE_DIR/scripts/dxf_to_solid.py" "$OUT_DIR_2D/$PROJECT_NAME-User_Eco2.dxf" "$OUT_DIR_3D/bottom-plate.step" 2 $BOTTOM_SPLIT
 run_job top-spacer-mold    freecadcmd "$BASE_DIR/scripts/generate_mold.py" "$OUT_DIR_2D/$PROJECT_NAME-F_Courtyard.dxf" "$OUT_DIR_3D/top-spacer-mold.step" 4.5 2 $TOP_SPLIT
-run_job bottom-spacer-mold freecadcmd "$BASE_DIR/scripts/generate_mold.py" "$OUT_DIR_2D/$PROJECT_NAME-B_Courtyard.dxf" "$OUT_DIR_3D/bottom-spacer-mold.step" 4.5 2 $BOTTOM_SPLIT
+run_job bottom-spacer-mold freecadcmd "$BASE_DIR/scripts/generate_mold.py" "$OUT_DIR_2D/$PROJECT_NAME-B_Courtyard.dxf" "$OUT_DIR_3D/bottom-spacer-mold.step" 3 2 $BOTTOM_SPLIT
 # Spacers themselves (e.g. to 3D print for dimension testing)
 run_job top-spacer         freecadcmd "$BASE_DIR/scripts/dxf_to_solid.py" "$OUT_DIR_2D/$PROJECT_NAME-F_Courtyard.dxf" "$OUT_DIR_3D/top-spacer.step" 4.5 $TOP_SPLIT
-run_job bottom-spacer      freecadcmd "$BASE_DIR/scripts/dxf_to_solid.py" "$OUT_DIR_2D/$PROJECT_NAME-B_Courtyard.dxf" "$OUT_DIR_3D/bottom-spacer.step" 4.5 $BOTTOM_SPLIT
+run_job bottom-spacer      freecadcmd "$BASE_DIR/scripts/dxf_to_solid.py" "$OUT_DIR_2D/$PROJECT_NAME-B_Courtyard.dxf" "$OUT_DIR_3D/bottom-spacer.step" 3 $BOTTOM_SPLIT
 
 FAIL=0
 set -- $NAMES
